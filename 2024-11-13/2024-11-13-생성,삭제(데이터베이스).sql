@@ -59,13 +59,15 @@ drop table testtable1;
 select * from testtable1;
 create table testtable2 as select * from testtable1;
 select * from products;
-create table testtable3 as select  prod_no, prod_cate, prod_name, prod_price, prod_comment, prod_company from products where prod_price=3000;
+create table testtable3 as select  prod_no, prod_cate, prod_name, prod_price, prod_comment, prod_company 
+from products where prod_price=3000;
 select * from testtable3;
 select * from products;
 select * from cate;
 select * from products as prod join cate on cate.cate_code = prod.prod_cate;
 drop table testtable4;
-create table testtable4 as select prod.prod_no, cate.cate_name, prod.prod_name, prod.prod_price from products as prod join cate on cate.cate_code = prod.prod_cate;
+create table testtable4 as
+ select prod.prod_no, cate.cate_name, prod.prod_name, prod.prod_price from products as prod join cate on cate.cate_code = prod.prod_cate;
 select * from testtable4;
 
 
