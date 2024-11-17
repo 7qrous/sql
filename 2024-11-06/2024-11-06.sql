@@ -98,7 +98,7 @@ SELECT * FROM product;
 UPDATE product SET pd_price = 2200, pd_comment = '요즘 물가가 많이 올라서..'
 WHERE seq = 18;
 
-UPDATE product SET pd_price = 2300, pd_comment = '트럼프 안되는데..'
+UPDATE product SET pd_price = 2300, pd_comment = 'ㄷㄷㄷ....'
 WHERE pd_company = '한국 코카콜라';
 
 -- WHERE 부분을 생략 시 해당 테이블의 모든 데이터를 수정함
